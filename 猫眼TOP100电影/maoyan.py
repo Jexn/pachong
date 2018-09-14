@@ -24,7 +24,7 @@ for offset in range(0,10):
     text = getOnePage(url,header)
     data = parseOnePage(text)
     for i in data:
-        with open('movies.txt','a',encoding='utf-8') as f:
+        with open('./爬虫/猫眼TOP100电影/movies.txt','a',encoding='utf-8') as f:
             # 将字典转换成字符串
             dd = json.dumps(i,ensure_ascii=False) + '\n'
             f.write(dd)
